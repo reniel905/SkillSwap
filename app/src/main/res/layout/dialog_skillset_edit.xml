@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit your skill set" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Technology and coding" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/skillSetEditTC_ITP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intro to Python" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditTC_WDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web Development Basics" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditTC_HSUSH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Set Up a Smart Home" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arts and Crafts" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/skillSetEditAC_DIB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digital Illustration for Beginners" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditAC_DHD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIY Home Decor" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditAC_CHL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calligraphy and Hand Lettering" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fitness and Wellness" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/skillSetEditFW_MT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meditation Techniques" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditFW_STB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Strength Training for Beginners" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditFW_BYP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basic Yoga Poses" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language and Communication" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/skillSetEditLC_CS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conversational Spanish" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditLC_PSCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Public Speaking and Confidence Building" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditLC_WRSO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Writing a Resume that Stands Out" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business and Finance" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/skillSetEditBF_BSMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basics of StockMarket Investing" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditBF_SMMSB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Social Media Marketing for Small Businesses" />
+
+            <CheckBox
+                android:id="@+id/skillSetEditBF_TMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Management Strategies" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

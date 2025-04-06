@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.RegisterFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/MenuBar"
+        style="@style/Default_Padding"
+        >
+
+
+        <Button
+            android:id="@+id/registerButtonBack"
+            style="@style/Button_Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/Button_Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Register" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/MenuBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Default_Padding">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                style="@style/Title"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bricolage_grotesque_semibold"
+                android:text="Personal information"
+                android:textSize="20dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:id="@+id/registerNameFirstLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerNameFirst"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Middle name"
+                android:id="@+id/registerNameMiddleLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerNameMiddle"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:id="@+id/registerNameLastLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerNameLast"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                app:prefixText="+63"
+                android:id="@+id/registerPhoneLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerPhone"
+                    android:inputType="phone"
+                    android:maxLength="10"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email address"
+                android:id="@+id/registerEmailLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerEmail"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/registerPasswordLayout"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerPassword"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Repeat password"
+                android:id="@+id/registerPasswordRepeatLayout"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerPasswordRepeat"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bricolage_grotesque_semibold"
+                android:text="Select the skills you are good at"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technology and coding"
+                style="@style/H2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/registerSkillTC_ITP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro to Python" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillTC_WDB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Web Development Basics" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillTC_HSUSH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to Set Up a Smart Home" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arts and Crafts"
+                style="@style/H2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/registerSkillAC_DIB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digital Illustration for Beginners" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillAC_DHD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DIY Home Decor" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillAC_CHL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calligraphy and Hand Lettering" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fitness and Wellness"
+                style="@style/H2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/registerSkillFW_MT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meditation Techniques" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillFW_STB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strength Training for Beginners" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillFW_BYP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Yoga Poses" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language and Communication"
+                style="@style/H2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/registerSkillLC_CS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Conversational Spanish" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillLC_PSCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Public Speaking and Confidence Building" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillLC_WRSO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Writing a Resume that Stands Out" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business and Finance"
+                style="@style/H2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/registerSkillBF_BSMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basics of StockMarket Investing" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillBF_SMMSB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Social Media Marketing for Small Businesses" />
+
+                <CheckBox
+                    android:id="@+id/registerSkillBF_TMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time Management Strategies" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

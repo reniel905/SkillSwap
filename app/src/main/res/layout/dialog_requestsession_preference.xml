@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request a session with this mentor" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How would you like to meet?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/requestSessionMeetLive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In person" />
+
+        <RadioButton
+            android:id="@+id/requestSessionMeetVirtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Virtual" />
+    </RadioGroup>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SkillSwap" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/ss_main</item>
+        <item name="fontFamily">@font/gabarito</item>
+    </style>
+
+    <style name="Theme.SkillSwap" parent="Base.Theme.SkillSwap" />
+    <style name="Default_Padding" parent="Base.Theme.SkillSwap">
+        <item name="android:padding">20dp</item>
+    </style>
+    <style name="Padding_Small" parent="Base.Theme.SkillSwap">
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="Title" parent="Base.Theme.SkillSwap">
+        <item name="fontFamily">@font/bricolage_grotesque_extrabold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="H2" parent="Base.Theme.SkillSwap">
+        <item name="fontFamily">@font/gabarito_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="Card_Text_Title" parent="Base.Theme.SkillSwap">
+        <item name="fontFamily">@font/bricolage_grotesque_extrabold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="Subinfo" parent="Base.Theme.SkillSwap">
+        <item name="backgroundColor">@color/cardview_shadow_end_color</item>
+        <item name="background">@color/cardview_shadow_end_color</item>
+        <item name="backgroundTint">@color/cardview_shadow_end_color</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="Button_Primary" parent="Base.Theme.SkillSwap">
+        <item name="backgroundTint">@color/ss_main</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/ss_main_d1</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    <style name="Button_Secondary" parent="Base.Theme.SkillSwap">
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textColor">@color/ss_main</item>
+        <item name="strokeColor">@color/ss_main_d1</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    <style name="Button_Secondary_Small" parent="Base.Theme.SkillSwap">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/ss_main</item>
+        <item name="strokeColor">@color/ss_main_d1</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+</resources>

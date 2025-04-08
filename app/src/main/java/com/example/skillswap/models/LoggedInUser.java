@@ -4,5 +4,4 @@ public class LoggedInUser {
 
     public static Mentor mentor = null;
 
-
 }

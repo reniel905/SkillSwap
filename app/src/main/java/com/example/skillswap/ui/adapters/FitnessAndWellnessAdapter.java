@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.skillswap.R;
@@ -133,6 +134,14 @@ public class FitnessAndWellnessAdapter extends RecyclerView.Adapter<FitnessAndWe
 
 
                 ImageButton addToBookMark = view.findViewById(R.id.viewSkillButtonBookmark);
+
+                RecyclerView viewSkillMentorList = view.findViewById(R.id.viewSkillMentorList);
+                ViewSkillMentorListAdapter viewSkillMentorListAdapter = new ViewSkillMentorListAdapter();
+                viewSkillMentorList.setAdapter(viewSkillMentorListAdapter);
+                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext());
+                linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+                viewSkillMentorList.setLayoutManager(linearLayoutManager);
+
                 addToBookMark.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

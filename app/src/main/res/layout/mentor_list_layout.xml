@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mentorCardImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/mentorCardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_avatar"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/mentorName"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:text="Mentor Name"
+        android:textAlignment="center"
+        android:layout_below="@+id/mentorCardImageLayout"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

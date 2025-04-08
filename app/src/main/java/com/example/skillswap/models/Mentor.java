@@ -1,5 +1,7 @@
 package com.example.skillswap.models;
 
+import java.util.ArrayList;
+
 public class Mentor {
 
     private int mentorId;
@@ -10,6 +12,7 @@ public class Mentor {
     private String phone;
     private Credential credential;
     private int rating;
+    private ArrayList<Skill> skills;
 
 
     public Mentor(int mentorId, String firstName, String lastName, String middleName, String email, String phone, Credential credential) {

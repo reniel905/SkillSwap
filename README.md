@@ -7,6 +7,7 @@ SkillSwap is an Android application that demonstrates a simple skill-sharing mar
 ## Table of contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Tech stack](#tech-stack)
 - [Requirements](#requirements)
 - [Quick start](#quick-start)
@@ -26,6 +27,34 @@ SkillSwap is an Android application that demonstrates a simple skill-sharing mar
 - Register users / mentors
 - Simple local persistence using SQLite (Users, Skills, Bookmarks)
 - Example data initialization for quick testing
+
+---
+
+## Screenshots
+
+Skill detail dialog / modal showing "Conversational Spanish" skill with mentors list.
+
+<p align="center"> 
+   <img src="docs/screenshots/1.jpg" width="400">
+</p>
+
+Listings view — list of all skills (stock market, yoga, calligraphy, conversational Spanish, etc.)
+
+<p align="center"> 
+   <img src="docs/screenshots/2.jpg" width="400">
+</p>
+
+Category view ("What would you like to learn today?") showing Technology & Coding and Arts & Crafts sections.
+  
+<p align="center"> 
+   <img src="docs/screenshots/3.jpg" width="400">
+</p>
+
+Login screen with validation error message ("Email is not valid.").
+  
+<p align="center"> 
+   <img src="docs/screenshots/4.jpg" width="400">
+</p>
 
 ---
 

@@ -242,8 +242,6 @@ Contributions are welcome. Suggested improvements:
 - Add network-backed storage or remote sync.
 - Improve UI polish and accessibility.
 
-If you want me to open issues or create patches for specific items above, tell me which ones and I can prepare suggested diffs/patch text.
-
 ---
 
 ## License & contact

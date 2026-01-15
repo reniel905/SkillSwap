@@ -248,7 +248,7 @@ If you want me to open issues or create patches for specific items above, tell m
 
 ## License & contact
 
-If you are the repository owner, add your preferred license file (LICENSE) to the repository. For questions or suggestions, contact the repository owner: https://github.com/reniel905
+For questions or suggestions, contact the repository owner: https://github.com/reniel905
 
 ---
 

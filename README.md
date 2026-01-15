@@ -249,7 +249,3 @@ If you want me to open issues or create patches for specific items above, tell m
 ## License & contact
 
 For questions or suggestions, contact the repository owner: https://github.com/reniel905
-
----
-
-Note: I couldn't add this file directly to the repository from here. Copy the README text above into a local `README.md`, commit, and push to your repository (or create/merge a PR). If you'd like, I can prepare a patch or provide exact git commands for creating a branch and opening a pull request with this README.
